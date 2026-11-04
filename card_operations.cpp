@@ -106,14 +106,14 @@ void printReport(const Card* cards, int count) {
     }
 
     printLine('=');
-    std::cout << std::left << std::setw(8) << "ID"
+    std::cout << std::left << std::setw(14) << "ID"
               << std::setw(16) << "Name"
               << std::right << std::setw(10) << "Balance"
               << std::setw(15) << "Transactions" << '\n';
     printLine();
 
     for (int i = 0; i < count; ++i) {
-        std::cout << std::left << std::setw(8) << cards[i].id
+        std::cout << std::left << std::setw(14) << cards[i].id
                   << std::setw(16) << cards[i].name
                   << std::right << std::setw(10) << std::fixed << std::setprecision(2)
                   << cards[i].balance
